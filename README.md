@@ -1,4 +1,4 @@
-# Create OONI Next
+# Create OONI App
 
 This aids the process of creating a [React](https://facebook.github.io/react) app with server-side rendering thanks to [Next.js](https://github.com/zeit/next.js), styled-components and ooni-components.
 
@@ -7,14 +7,14 @@ It is a hard-fork of the excellent [segmentio/create-next-app](https://github.co
 - [Getting Started](#getting-started) — How to create an app
 - [Starting from Examples](#starting-from-examples) — How to create an app from a Next.js example
 
-Though this primarily meant to be used internally by OONI, if you wish to use it and run into any issues or have feedback, please [file an issue](https://github.com/openobservatory/create-ooni-next/issues/new)
+Though this primarily meant to be used internally by OONI, if you wish to use it and run into any issues or have feedback, please [file an issue](https://github.com/openobservatory/create-ooni-app/issues/new)
 
 ## Overview
 
 ```sh
-npm install -g create-ooni-next
+npm install -g create-ooni-app
 
-create-ooni-next my-app
+create-ooni-app my-app
 cd my-app/
 npm run dev
 ```
@@ -27,7 +27,7 @@ When you're ready for production, run `npm run build` then `npm run start`.
 You **don't** need to install or setup Webpack or Babel.
 They come packaged with `next`, so you can just start coding.
 
-After running `create-ooni-next`, you're good to go!
+After running `create-ooni-app`, you're good to go!
 
 ## Getting Started
 
@@ -36,7 +36,7 @@ After running `create-ooni-next`, you're good to go!
 Install it once globally:
 
 ```sh
-npm install -g create-ooni-next
+npm install -g create-ooni-app
 ```
 
 **You’ll need to have Node >= 6 on your machine**. You can use [nvm](https://github.com/creationix/nvm#usage) to easily switch Node versions between different projects.
@@ -48,7 +48,7 @@ npm install -g create-ooni-next
 To create a new app, run:
 
 ```
-create-ooni-next my-app
+create-ooni-app my-app
 cd my-app
 ```
 

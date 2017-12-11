@@ -1,18 +1,18 @@
 {
-  "name": "create-next-app",
-  "description": "Create Next.js OONI apps in one command",
+  "name": "create-ooni-app",
+  "description": "Create OONI web apps in one command",
   "version": "0.5.2",
   "main": "index.js",
   "license": "BSD-3-Clause",
   "bin": {
-    "create-ooni-next": "./bin/create-ooni-next"
+    "create-ooni-app": "./bin/create-ooni-app"
   },
   "engines": {
     "node": ">=4"
   },
-  "repository": "openobservatory/create-ooni-next",
+  "repository": "openobservatory/create-ooni-app",
   "bugs": {
-    "url": "https://github.com/openobservatory/create-ooni-next/issues"
+    "url": "https://github.com/openobservatory/create-ooni-app/issues"
   },
   "dependencies": {
     "ansi-escapes": "^2.0.0",
