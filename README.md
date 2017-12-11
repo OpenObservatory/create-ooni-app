@@ -1,19 +1,20 @@
-# Create Next App
+# Create OONI Next
 
-The easiest way to create a [React](https://facebook.github.io/react) app with server-side rendering thanks to [Next.js](https://github.com/zeit/next.js)
+This aids the process of creating a [React](https://facebook.github.io/react) app with server-side rendering thanks to [Next.js](https://github.com/zeit/next.js), styled-components and ooni-components.
+
+It is a hard-fork of the excellent [segmentio/create-next-app](https://github.com/segmentio/create-next-app).
 
 - [Getting Started](#getting-started) — How to create an app
-- [User Guide](https://github.com/segmentio/create-next-app/blob/master/lib/templates/default/README.md) —  How to develop apps started with Create Next App
 - [Starting from Examples](#starting-from-examples) — How to create an app from a Next.js example
 
-If you run into any issues or have feedback, please [file an issue](https://github.com/segmentio/create-next-app/issues/new)
+Though this primarily meant to be used internally by OONI, if you wish to use it and run into any issues or have feedback, please [file an issue](https://github.com/openobservatory/create-ooni-next/issues/new)
 
 ## Overview
 
 ```sh
-npm install -g create-next-app
+npm install -g create-ooni-next
 
-create-next-app my-app
+create-ooni-next my-app
 cd my-app/
 npm run dev
 ```
@@ -21,16 +22,12 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) to view your running app.
 When you're ready for production, run `npm run build` then `npm run start`.
 
-<img width="600" alt="Create Next App running in terminal" src="https://cloud.githubusercontent.com/assets/1026125/25556236/0ac91ca6-2cae-11e7-87ae-bb7974285063.png" />
-
-<img width="600" alt="Create Next App running in terminal" src="https://cloud.githubusercontent.com/assets/1026125/25556240/111fc3b6-2cae-11e7-84b6-961de4fd27f9.png" />
-
 ### Start Coding Now
 
 You **don't** need to install or setup Webpack or Babel.
 They come packaged with `next`, so you can just start coding.
 
-After running `create-next-app`, you're good to go!
+After running `create-ooni-next`, you're good to go!
 
 ## Getting Started
 
@@ -39,7 +36,7 @@ After running `create-next-app`, you're good to go!
 Install it once globally:
 
 ```sh
-npm install -g create-next-app
+npm install -g create-ooni-next
 ```
 
 **You’ll need to have Node >= 6 on your machine**. You can use [nvm](https://github.com/creationix/nvm#usage) to easily switch Node versions between different projects.
@@ -51,7 +48,7 @@ npm install -g create-next-app
 To create a new app, run:
 
 ```
-create-next-app my-app
+create-ooni-next my-app
 cd my-app
 ```
 
@@ -64,10 +61,11 @@ my-app/
   package.json
   next.config.js
   components/
-    index.js
-    head.js
-    nav.js
+    Head.js
+    Layout.js
+    globalStyle.js
   pages/
+    _document.js
     index.js
   static/
     favicon.ico
@@ -108,49 +106,7 @@ The application should be compiled with \`npm run build\` first.
 
 Now you're ready to code & deploy your app!
 
-## Starting from Examples
-
-There are a ton of examples in the [Next.js repo](https://github.com/zeit/next.js/tree/master/examples/) (and growing!) that you can use to bootstrap your app.
-
-To use an example:
-
-1. Go to https://open.segment.com/create-next-app#examples
-2. Search for an example you want and get it's name (looks like `basic-css`)
-3. Run: `create-next-app --example basic-css example-app`
-4. Done 💥
-
-## Acknowledgements
-
-We are grateful to the authors of existing related projects for their ideas as inspiration:
-
-* [Create React App](https://github.com/facebookincubator/create-react-app)
-* [Next.js](https://github.com/zeit/next.js)
-* [@eanplatter](https://github.com/eanplatter)
-* [@insin](https://github.com/insin)
-* [@mxstbr](https://github.com/mxstbr)
-
-Looking for alternatives? Here are some other project starter kits:
-
-* [Create React App](https://github.com/facebookincubator/create-react-app)
-* [insin/nwb](https://github.com/insin/nwb)
-* [mozilla-neutrino/neutrino-dev](https://github.com/mozilla-neutrino/neutrino-dev)
-* [NYTimes/kyt](https://github.com/NYTimes/kyt)
-* [gatsbyjs/gatsby](https://github.com/gatsbyjs/gatsby)
-* [enclave](https://github.com/eanplatter/enclave)
-* [motion](https://github.com/motion/motion)
-* [quik](https://github.com/satya164/quik)
-* [sagui](https://github.com/saguijs/sagui)
-* [roc](https://github.com/rocjs/roc)
-* [aik](https://github.com/d4rkr00t/aik)
-* [react-app](https://github.com/kriasoft/react-app)
-* [dev-toolkit](https://github.com/stoikerty/dev-toolkit)
-* [tarec](https://github.com/geowarin/tarec)
-* [sku](https://github.com/seek-oss/sku)
-
-
-Questions? Feedback? [Please let us know](https://github.com/segmentio/create-next-app/issues/new)
-
-## License (MIT)
+## Original License (MIT)
 
 ```
 WWWWWW||WWWWWW
